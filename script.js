@@ -44,7 +44,7 @@ function createPassword() {
     currentChoice += passChoice[Math.floor(Math.random() * (passChoice.length))];
     }
     return currentChoice  
-  }
+}
 // This final function pushes the final submission to the index for the generator to function
 function writePassword() {
   var password  = createPassword();
