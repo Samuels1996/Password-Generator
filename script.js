@@ -20,24 +20,25 @@ function createPassword() {
   // If user selected acceptable length criteria this will then allow them to decide if they would like to use upper case characters. 
   else { 
     var upperCaseChoice = confirm("Would you like to have uppercase letters in your password? Click OK if yes");
-  if (upperCaseChoice === true) {
+  if (upperCaseChoice === true); {
     passChoice += upperCase;
   }
   // This allows the user to decide if they would like lower case characters 
     var lowerCaseChoice = confirm("Would you like to have lower case letters in your password? Click OK if yes");
-  if (lowerCaseChoice === true) {
+  if (lowerCaseChoice === true); {
     passChoice += lowerCase;
   }
   // This allows the user to decide if they would like numbers 
     var numberChoice = confirm ("Would you like to have numbers in your password? Click OK if yes");
-  if (numberChoice === true) {
+  if (numberChoice === true); {
     passChoice += number;
   }
   // This allows the user to decide if they would like special characters 
     var symbolChoice = confirm ("Would you like to have special characters in your password? Click OK if yes");
-  if (symbolChoice === true);
+  if (symbolChoice === true); {
     passChoice += symbols;
-  }
+    }
+  }  
   // This addition is a for loop to present the "currentChoice" in with the users selected passChoice decisions and uses a math random and math floor command to randomize all true selections for password generator 
   for (i = 0; i < passLength; i++) {
     currentChoice += passChoice[Math.floor(Math.random() * (passChoice.length))];
