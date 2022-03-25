@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 // This sets the variable in for the "current choice" as well as the "pass choice"  The let is going to apply just to this block of code. 
 var currentChoice = "";
-let passChoice = "";
+var passChoice = "";
 //Below is a list of characters that the user can choose from. As well as confirmation and decline of choices.
 const upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz';
@@ -12,7 +12,7 @@ const number = '0123456789';
 const symbols = '!@#$%^&*()<>?:-_=+[]';
 // This is a general length function. If they determine a length less than 8 characters or more than 128 then they will get the alert. If not it will move down the if else tree. 
 function createPassword() {
-    passLength = prompt("Select how many characters you would like in your password. 1-128");
+    var passLength = prompt("Select how many characters you would like in your password. 1-128");
   if (passLength < 8 || passLength > 128) {
     alert ("Please check character length selection and resubmit");
     return 
